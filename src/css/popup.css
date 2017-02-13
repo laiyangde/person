@@ -1,0 +1,169 @@
+﻿#pop,
+#pop>.bg {
+    left: 0;
+    top: 0;
+    height: 100%
+}
+
+#pop {
+    position: absolute;
+    width: 640px;
+    display: none;
+    z-index: 100
+}
+
+#pop>.bg {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    opacity: 1
+}
+
+#pop .close,
+#pop .content,
+#pop .share {
+    display: none;
+    opacity: 0
+}
+
+#pop .content,
+#pop .dots {
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+#pop .dots .dot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(../images/sanjiaoxing.png);
+    margin: -50px 0 0 -50px
+}
+
+#pop .code div,
+#pop .other .info {
+    position: absolute;
+    left: -211px;
+    top: -283px;
+    width: 422px;
+    height: 566px
+}
+
+#pop .code .p2 {
+    background: url(../images/tao.png)
+}
+
+#pop .invitation .bg {
+    position: absolute;
+    left: -249px;
+    top: -375px;
+    width: 498px;
+    height: 699px;
+    background: url(../images/who.png)
+}
+
+#pop .invitation .avatar {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: -48px;
+    top: -276px;
+    -webkit-border-radius: 50px;
+    overflow: hidden
+}
+
+#pop .invitation .avatar img {
+    width: 100%;
+    height: 100%
+}
+
+#pop .invitation .title,
+#pop .invitation textarea {
+    position: absolute;
+    width: 300px;
+    left: -150px;
+    text-align: center
+}
+
+#pop .invitation .title {
+    top: -125px;
+    font-size: 40px;
+    line-height: 40px;
+    height: 40px
+}
+
+#pop .invitation textarea {
+    border: 0;
+    height: 240px;
+    top: -70px;
+    font-size: 22px;
+    line-height: 36px;
+    resize: none;
+    color: #a3a3a3
+}
+
+#pop .invitation .btn {
+    position: absolute;
+    left: -212px;
+    top: 340px;
+    width: 424px;
+    height: 78px;
+    background: url(../images/yaoqinghan.png)
+}
+
+#pop .close {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 73px;
+    height: 73px;
+    background: url(../images/icon6.png);
+    margin: 250px 0 0 -36px
+}
+
+#pop .share,
+#pop .share>.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+#pop .share>.bg {
+    background: #000;
+    opacity: .8
+}
+
+#pop .share .t1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 234px;
+    height: 96px;
+    background: url(../images/inviteFriend.png)
+}
+
+#pop .share2,
+#pop .share2>.bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+#pop .share2 {
+    opacity: 0;
+    display: none
+}
+
+#pop .share2 .t1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 234px;
+    height: 96px;
+    background: url(../images/inviteFriend.png)
+}

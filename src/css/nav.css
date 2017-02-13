@@ -1,0 +1,208 @@
+﻿#nav,
+#nav .bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%
+}
+
+#nav,
+#nav .bg,
+#nav .on {
+    position: absolute
+}
+
+#nav {
+    display: none
+}
+
+#nav .bg {
+    width: 640px;
+    background: #000;
+    opacity: 1
+}
+
+#nav .on {
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    background: url(../images/icon.png)
+}
+
+#nav .mute {
+    position: absolute;
+    right: 10px;
+    top: 100px
+}
+
+#nav .bar,
+#nav .mute .muteOff,
+#nav .mute .muteOn {
+    top: 0;
+    position: absolute;
+    right: 0
+}
+
+#nav .mute .muteOn {
+    width: 80px;
+    height: 80px;
+    background: url(../images/icon2.png)
+}
+
+#nav .mute .muteOff {
+    width: 80px;
+    height: 80px;
+    background: url(../images/icon3.png);
+    display: none
+}
+
+#nav .bar {
+    height: 100%
+}
+
+#nav .bar .item {
+    position: absolute;
+    right: 0;
+    width: 390px
+}
+
+#nav .bar .part1,
+#nav .bar .part2,
+#nav .bar .part3,
+#nav .bar .part4,
+#nav .bar .part5 {
+    position: absolute;
+    right: 0;
+    width: 540px
+}
+
+#nav .bar .part1 {
+    top: 0;
+    height: 28%;
+    background: url(../images/icon4.png) 25px center no-repeat #2a46da
+}
+
+#nav .bar .part1 .item {
+    height: 25%
+}
+
+#nav .bar .part1 .item1 {
+    top: 0;
+    background: url(../images/icon5.png) right center no-repeat
+}
+
+#nav .bar .part1 .item2 {
+    top: 25%;
+    background: url(../images/icon6.png) right center no-repeat
+}
+
+#nav .bar .part1 .item3 {
+    top: 50%;
+    background: url(../images/naodong.png) right center no-repeat
+}
+
+#nav .bar .part1 .item4 {
+    top: 75%;
+    background: url(../images/daka.png) right center no-repeat
+}
+
+#nav .bar .part2 {
+    top: 28%;
+    height: 28%;
+    background: url(../images/icon7.png) 25px center no-repeat #8c0b44
+}
+
+#nav .bar .part2 .item {
+    height: 25%
+}
+
+#nav .bar .part2 .item1 {
+    top: 0;
+    background: url(../images/zaoyin.png) right center no-repeat
+}
+
+#nav .bar .part2 .item2 {
+    top: 25%;
+    background: url(../images/yanxiu.png) right center no-repeat
+}
+
+#nav .bar .part2 .item3 {
+    top: 50%;
+    background: url(../images/pk.png) right center no-repeat
+}
+
+#nav .bar .part2 .item4 {
+    top: 75%;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part3 {
+    top: 56%;
+    height: 28%;
+    background: url(../images/icon7.png) 25px center no-repeat #4f1175
+}
+
+#nav .bar .part3 .item {
+    height: 25%
+}
+
+#nav .bar .part3 .item1 {
+    top: 0;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part3 .item2 {
+    top: 25%;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part3 .item3 {
+    top: 50%;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part3 .item4 {
+    top: 75%;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part4 {
+    top: 84%;
+    height: 8%;
+    background: url(../images/icon9.png) 55px center no-repeat #e9492a
+}
+
+#nav .bar .part4 .item {
+    height: 100%
+}
+
+#nav .bar .part4 .item1 {
+    top: 0;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .part5 {
+    top: 92%;
+    height: 8%;
+    background: url(../images/icon10.png) 55px center no-repeat #c92606
+}
+
+#nav .bar .part5 .item {
+    height: 100%
+}
+
+#nav .bar .part5 .item1 {
+    top: 0;
+    background: url(../images/gc.png) right center no-repeat
+}
+
+#nav .bar .off {
+    position: absolute;
+    right: 540px;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: url(../images/icon11.png);
+    pointer-events: none
+}

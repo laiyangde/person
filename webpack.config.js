@@ -53,7 +53,7 @@ var plugins = [
         // chunksSortMode: 允许控制块在添加到页面之前的排序方式，支持的值：'none' | 'default' | {function}-default:'auto'
         // excludeChunks: 允许跳过某些块，(比如，跳过单元测试的块)
         minify:{    //压缩HTML文件
-             // removeComments:true,    //移除HTML中的注释
+             removeComments:false,    //移除HTML中的注释
              collapseWhitespace:false    //删除空白符与换行符
         }
     }),
@@ -112,7 +112,7 @@ module.exports = {
         },
         {
             test: /\.js$/,
-            exclude: /(node_modules|lib)/,
+            exclude: /node_modules/,
             loader: 'babel',//在webpack的module部分的loaders里进行配置即可
             //以下query说明:Babel其实可以完全在webpack.config.js中进行配置，但是考虑到babel具有非常多的配置选项
             //因此把babel的配置选项放在一个单独的名为 ".babelrc" 的配置文件中,webpack会自动调用.babelrc里的babel配置选项
@@ -130,7 +130,7 @@ module.exports = {
           },
           {
                 test: /\.(png|jpg)$/,
-                loader: 'url-loader?limit=2048&name=images/[hash:8]-[name].[ext]'
+                loader: 'url-loader?limit=100&name=images/[hash:8]-[name].[ext]'
           },
           {
 　　　　　　test: /\.html$/,
@@ -141,7 +141,7 @@ module.exports = {
     //添加了此项，则表明从外部引入，内部不会打包合并进去
     externals: {
         '$': 'window.$',
-        "jquery": 'window.jquery',
+        // "jquery": 'window.jquery',
         //...
     },
   postcss: [
@@ -161,6 +161,6 @@ module.exports = {
     watchOptions: {
     aggregateTimeout: 300,
     poll: 1000,// Check for changes every second
-    ignored:/(node_modules|lib)/,
+    ignored:/node_modules/,
   } 
 }
